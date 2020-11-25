@@ -1,0 +1,7 @@
+#!/bin/bash
+
+echo "what file?"
+read a
+
+
+egrep -n "^.{$(wc -L < $a)}$" $a  #find longest line and number and prints it
