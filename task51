@@ -1,0 +1,7 @@
+#!/bin/bash
+
+echo "what file?"
+read a
+
+sed -i '/^[[:blank:]]*$/ d' $a #finds all empty lines and deletes them
+cat $a
