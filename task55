@@ -1,0 +1,10 @@
+#!/bin/bash
+
+echo "what directory?"
+read a
+
+for i in $(find $a -maxdepth 1 - empty -print ); #checks each object to see if its empty
+do
+stat $i --printf " : %n Format: %F last_aces %x\n" #checks objects format and access date
+rm $i -d
+done
