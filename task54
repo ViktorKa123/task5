@@ -1,0 +1,6 @@
+#!/bin/bash
+
+echo "what directory?"
+
+cd $a
+find -perm u+r,g+r,o+r #find file with permisions
